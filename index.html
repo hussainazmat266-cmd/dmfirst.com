@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>DMFirst — Demo</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <header class="top">
+    <button class="back" onclick="navigate('home')">‹</button>
+    <div class="logo"><span>DM</span><b>DMFirst</b></div>
+    <button class="lang">🇺🇸 EN</button>
+  </header>
+  <main id="view"></main>
+  <nav class="nav">
+    <button onclick="navigate('home')" data-page="home"><i>⌂</i><small>Home</small></button>
+    <button onclick="navigate('activity')" data-page="activity"><i>🎁</i><small>Activity</small></button>
+    <button class="wheel" onclick="navigate('wheel')" data-page="wheel"><strong>◉</strong><small>Wheel</small></button>
+    <button onclick="navigate('promotion')" data-page="promotion"><i>♟</i><small>Promotion</small></button>
+    <button onclick="navigate('account')" data-page="account"><i>●</i><small>Account</small></button>
+  </nav>
+</div>
+<div id="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>
